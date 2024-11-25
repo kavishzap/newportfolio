@@ -1,5 +1,6 @@
 import { useState } from "react";
 import React from "react";
+import { Shimmer } from "react-shimmer";
 
 const ResumeCard = ({ title, subTitle, result, des, image }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -30,11 +31,14 @@ const ResumeCard = ({ title, subTitle, result, des, image }) => {
             >
               ✕
             </button>
-            <img
-              src={image}
-              alt="Modal"
-              className="max-w-full max-h-[80vh] rounded-md"
-            />
+            <Shimmer>
+              <img
+                src={image}
+                alt="Modal"
+                className="max-w-full max-h-[80vh] rounded-md"
+                loading="lazy"
+              />
+            </Shimmer>
           </div>
         </div>
       )}

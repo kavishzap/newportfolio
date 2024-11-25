@@ -6,9 +6,9 @@ import Achievement from "./Achievement";
 import Experience from "./Experience";
 
 const Resume = () => {
-  const [educationData, setEducationData] = useState(true);
+  const [educationData, setEducationData] = useState(false);
   const [skillData, setSkillData] = useState(false);
-  const [experienceData, setExperienceData] = useState(false);
+  const [experienceData, setExperienceData] = useState(true);
   const [achievementData, setAchievementData] = useState(false);
   return (
     <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">

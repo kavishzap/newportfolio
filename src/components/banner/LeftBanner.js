@@ -1,18 +1,18 @@
 import React from "react";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+// import { useTypewriter } from "react-simple-typewriter";
 import {
   FaReact,
 } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs, SiAndroid, SiFlutter, SiVuedotjs} from "react-icons/si";
 
 const LeftBanner = () => {
-  const [text] = useTypewriter({
-    words: ["Front End Developer.", "Mobile Application Developer."],
-    loop: true,
-    typeSpeed: 20,
-    deleteSpeed: 10,
-    delaySpeed: 2000,
-  });
+  // const [text] = useTypewriter({
+  //   words: ["Front End Developer.", "Mobile Application Developer."],
+  //   loop: true,
+  //   typeSpeed: 20,
+  //   deleteSpeed: 10,
+  //   delaySpeed: 2000,
+  // });
   return (
     <div className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
@@ -20,13 +20,17 @@ const LeftBanner = () => {
           Hi, I'm{" "}
           <span className="text-designColor capitalize">kavish Mojhoa</span>
         </h1>
-        <h2 className="text-4xl font-bold text-white">
+        {/* <h2 className="text-4xl font-bold text-white">
           Specialized in <span>{text}</span>
           <Cursor
             cursorBlinking="false"
             cursorStyle="|"
             cursorColor="#ff014f"
           />
+        </h2> */}
+        <h2 className="text-4xl font-bold text-white">
+          Specialized in
+          Front End Developer / Mobile Application Developer
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
           Versatile web and mobile app developer with expertise in React ,
