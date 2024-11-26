@@ -1,6 +1,5 @@
 import { useState } from "react";
 import React from "react";
-import { Shimmer } from "react-shimmer";
 
 const ResumeCard = ({ title, subTitle, result, des, image }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
